@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "2f67ca34-9b02-42bb-92f0-c8565564cda4",
+		"name": "eduCMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Articles paginated",
+			"_postman_id": "9ab07e18-9ad7-4a18-b573-a4ae3f49262b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{TOKEN}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}/articles"
+			},
+			"response": []
+		},
+		{
+			"name": "Read Article",
+			"_postman_id": "f1619be1-a387-48d2-ab4e-f5c4205a0f06",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{TOKEN}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}/articles/11"
+			},
+			"response": []
+		},
+		{
+			"name": "Save Article",
+			"_postman_id": "dea03f79-d3d0-4559-9adc-8e5f95bfea42",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{TOKEN}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"my POST article\",\r\n    \"body\": \"get all POST request\",\r\n    \"user_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}/articles/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Article",
+			"_postman_id": "00e73d21-8d06-406d-9939-5aaf130d3b67",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{TOKEN}}"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"my PUT article\",\r\n    \"body\": \"get all POST request edited by PUT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}/articles/11"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Article",
+			"_postman_id": "be44c357-d6c6-49da-9394-caed0a298a3c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{TOKEN}}"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"my PUT article\",\r\n    \"body\": \"get all POST request edited by PUT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}/articles/11"
+			},
+			"response": []
+		},
+		{
+			"name": "get_token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "347a672c-adb4-4274-8830-1dc07c190e0d",
+						"exec": [
+							"let response = pm.response.json();\r",
+							"pm.collectionVariables.set(\"TOKEN\", response.token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "53f836bd-057d-4d9b-8a1b-eaef93690112",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"admin@test.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}/get_token"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{TOKEN}}"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "3332e6bb-3bc7-4883-b87b-89adf2cdbb51",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0328f0e7-1f5e-4a6e-b3de-34242979c70e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "b4168173-458c-4b09-a0e0-26d53f066a58",
+			"key": "TOKEN",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "28dd5139-78ba-46cc-b4c4-a5fab104e81a",
+			"key": "URL",
+			"value": "http://localhost/api/v1",
+			"type": "string"
+		}
+	]
+}
