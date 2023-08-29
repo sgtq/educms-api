@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "Get All Articles paginated",
-			"_postman_id": "9ab07e18-9ad7-4a18-b573-a4ae3f49262b",
+			"id": "9ab07e18-9ad7-4a18-b573-a4ae3f49262b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -26,7 +26,7 @@
 		},
 		{
 			"name": "Read Article",
-			"_postman_id": "f1619be1-a387-48d2-ab4e-f5c4205a0f06",
+			"id": "f1619be1-a387-48d2-ab4e-f5c4205a0f06",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -45,7 +45,7 @@
 		},
 		{
 			"name": "Save Article",
-			"_postman_id": "dea03f79-d3d0-4559-9adc-8e5f95bfea42",
+			"id": "dea03f79-d3d0-4559-9adc-8e5f95bfea42",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -73,7 +73,7 @@
 		},
 		{
 			"name": "Update Article",
-			"_postman_id": "00e73d21-8d06-406d-9939-5aaf130d3b67",
+			"id": "00e73d21-8d06-406d-9939-5aaf130d3b67",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -101,7 +101,7 @@
 		},
 		{
 			"name": "Delete Article",
-			"_postman_id": "be44c357-d6c6-49da-9394-caed0a298a3c",
+			"id": "be44c357-d6c6-49da-9394-caed0a298a3c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -142,7 +142,7 @@
 					}
 				}
 			],
-			"_postman_id": "53f836bd-057d-4d9b-8a1b-eaef93690112",
+			"id": "53f836bd-057d-4d9b-8a1b-eaef93690112",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -193,13 +193,12 @@
 	],
 	"variable": [
 		{
-			"id": "b4168173-458c-4b09-a0e0-26d53f066a58",
+			"id": "82820b86-8696-4d93-a6a5-cc87773838c3",
 			"key": "TOKEN",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "28dd5139-78ba-46cc-b4c4-a5fab104e81a",
+			"id": "f7a0a9bf-9da6-4d5b-9a74-f5f5cd29fc26",
 			"key": "URL",
 			"value": "http://localhost/api/v1",
 			"type": "string"
