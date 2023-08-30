@@ -39,7 +39,7 @@
 				},
 				"method": "GET",
 				"header": [],
-				"url": "{{URL}}/articles/11"
+				"url": "{{URL}}/articles/4"
 			},
 			"response": []
 		},
@@ -193,12 +193,12 @@
 	],
 	"variable": [
 		{
-			"id": "0cc1d782-1d8c-408f-8c13-d17022cd6d1e",
+			"id": "d09d8084-d0e5-4644-97e4-a7b02580edfd",
 			"key": "TOKEN",
 			"value": ""
 		},
 		{
-			"id": "6705a280-fb4c-4233-b12b-11271b47b7f3",
+			"id": "425ef91b-0a62-4eb4-963e-69c0ece4dea4",
 			"key": "URL",
 			"value": "http://localhost/api/v1",
 			"type": "string"
